@@ -79,11 +79,9 @@ src/
 
 ## Screenshots
 
-The app features a clean, minimalist design with:
-- Yellow header with the "Keeper" branding
-- Centered note creation form
-- Card-based note display with shadow effects
-- Floating add button for creating notes
+## Screenshots
+
+![Keeper App Screenshot](public/screenshots/app.png)
 
 
 Made with ❤️ using React and Vite
