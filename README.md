@@ -1,16 +1,89 @@
-# React + Vite
+# Keeper - React Note Taking App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and elegant note-taking application built with React and Vite. Create, manage, and delete notes with a clean, Google Keep-inspired interface.
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/React-19.2.0-61DAFB?logo=react)
+![Vite](https://img.shields.io/badge/Vite-7.2.4-646CFF?logo=vite)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- **Create Notes** - Add new notes with a title and content
+- **Delete Notes** - Remove notes you no longer need
+- **Responsive Design** - Clean UI that works on different screen sizes
+- **Pre-loaded Sample Notes** - Includes example notes to get you started
+- **Dynamic Footer** - Automatically updates copyright year
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- **React 19** - Modern React with functional components and hooks
+- **Vite** - Next-generation frontend build tool for fast development
+- **ESLint** - Code linting for consistent code quality
+- **CSS3** - Custom styling with modern CSS features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Project Structure
+
+```
+src/
+├── main.jsx            # Application entry point
+├── index.css           # Global styles
+├── notes.jsx           # Sample notes data
+├── assets/             # Static assets
+└── component/
+    ├── App.jsx         # Main app component with state management
+    ├── Header.jsx      # App header with branding
+    ├── Footer.jsx      # Footer with dynamic copyright
+    ├── CreateArea.jsx  # Form component for creating notes
+    └── Note.jsx        # Individual note display component
+```
+
+## Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/note-keeper-app.git
+   cd note-keeper-app
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser**
+   Navigate to `http://localhost:5173`
+
+## Available Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server with hot reload |
+| `npm run build` | Build for production |
+| `npm run preview` | Preview production build locally |
+| `npm run lint` | Run ESLint for code quality checks |
+
+## Usage
+
+1. **Creating a Note**
+   - Enter a title in the "Title" field
+   - Add your note content in the text area
+   - Click the **Add** button to save
+
+2. **Deleting a Note**
+   - Click the **DELETE** button on any note to remove it
+
+## Screenshots
+
+The app features a clean, minimalist design with:
+- Yellow header with the "Keeper" branding
+- Centered note creation form
+- Card-based note display with shadow effects
+- Floating add button for creating notes
+
+
+Made with ❤️ using React and Vite
